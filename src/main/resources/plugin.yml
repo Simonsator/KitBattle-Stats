@@ -1,0 +1,6 @@
+name: Kit-Battle-Stats
+version: ${project.version}
+author: Simonsator
+depends: [Clans]
+main: de.simonsator.partyandfriends.clans.stats.kitbattle.KBMain
+description: Provides stats for clans for csgo
