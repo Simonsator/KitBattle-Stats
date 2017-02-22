@@ -21,6 +21,7 @@ public class KBConfig extends ConfigurationCreator {
 		set("database.host", "localhost");
 		set("database.port", 3306);
 		set("database.db", "minecraft");
+		set("database.UseSSL", false);
 		set("database.user", "root");
 		set("database.password", "password");
 	}

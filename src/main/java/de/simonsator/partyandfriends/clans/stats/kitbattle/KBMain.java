@@ -31,7 +31,8 @@ public class KBMain extends Plugin implements ClanStat {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		connection = new KBConnection(config.getString("database.db"), "jdbc:mysql://" + config.getString("database.host") + ":" + config.getInt("database.port"), config.getString("database.user"), config.getString("database.password"));
+		connection = new KBConnection(config.getString("database.db"), "jdbc:mysql://" + config.getString("database.host")
+				+ ":" + config.getInt("database.port"), config.getString("database.user"), config.getString("database.password"), config.getBoolean("database.UseSSL"));
 		((Stats) ClanCommands.getInstance().getSubCommand(Stats.class)).registerClanStats(this, this);
 	}
 

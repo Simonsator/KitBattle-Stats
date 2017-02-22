@@ -13,8 +13,8 @@ import java.util.UUID;
  * @version 1.0.0 30.11.16
  */
 public class KBConnection extends SQLCommunication {
-	protected KBConnection(String pDatabase, String pURL, String pUserName, String pPassword) {
-		super(pDatabase, pURL, pUserName, pPassword);
+	protected KBConnection(String pDatabase, String pURL, String pUserName, String pPassword, boolean pUseSSL) {
+		super(pDatabase, pURL, pUserName, pPassword, pUseSSL);
 	}
 
 	public PlayerData getPlayerData(UUID pUUID) {
